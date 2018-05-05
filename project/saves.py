@@ -11,7 +11,8 @@ def save_filter(listdir):
         if res is not None:
             yield int(res.group(1))
 
-def main():
+
+def save():
     parser = argparse.ArgumentParser(description='Архивирует указанную папку и загружает в Google Drive')
     parser.add_argument('-a', '--archiver', help='Путь к архиватору 7z')
     parser.add_argument('-n', '--arc-name', help='Имя файла архива')
@@ -44,4 +45,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    save()

@@ -14,7 +14,7 @@ setup(
     # ],
     entry_points={
         'console_scripts': [
-            'save = project.saves:main',
+            'save = project.saves:save',
         ]
     },
     # include_package_data=True,
